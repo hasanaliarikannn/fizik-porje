@@ -1,0 +1,84 @@
+.notfound-text .notfound-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 231px;
+  height: 40px;
+  background: #f23e6e;
+  border-radius: 18px;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1000px;
+  margin-top: 189px;
+  width: 144px;
+  height: 32px;
+}
+.notfound-error-2 {
+  color: #8f8f8f;
+  margin-left: 994px;
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.notfound-error-3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  margin-left: 994px;
+  margin-top: -10px;
+}
+.notfound-button {
+    display: flex;
+margin-left:30px;
+
+}
+.notfound-button .notfount-button_1 {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 231px;
+    height: 40px;
+    background: #EE9292;;
+    border-radius: 9px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    width: 144px;
+    height: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;  
+margin-left:1000px;
+
+
+}
+.notfound-button .text-2_notfound {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+text-decoration: none;
+}
+
+.notfound-image img {
+    margin-top: -490px;
+
+}

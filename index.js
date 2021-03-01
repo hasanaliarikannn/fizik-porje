@@ -12,5 +12,5 @@ app.use('/', router);
 app.use('/', postRoutes);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-	console.log('Your app is running');
+	console.log('Server çalışıyor.');
 });

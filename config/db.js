@@ -7,7 +7,7 @@ module.exports = connect = async () => {
 			useNewUrlParser: true,
 			useFindAndModify: false,
 		});
-		console.log('connection created');
+		console.log('Veri tabanı');
 	} catch (error) {
 		console.log(error);
 	}
