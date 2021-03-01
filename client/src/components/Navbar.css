@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  height: 8vh;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-style: normal;
+}
+.logo::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #af2b2b;
+  border-radius: 10px;
+}
+
+.logo i {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+ text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  color: black;
+  font-size: 20px;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 0%;
+  left: 0;
+  top: 1.8rem;
+  background: rgb(182, 198, 214);
+  transition: 0.3s linear;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+ul li a.clicked::after {
+  width: 100%;
+}
+
+ul li a:hover {
+  color: rgb(91, 165, 235);
+}
+
+.toggle-button {
+  display: none;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .toggle-button {
+    display: block;
+  }
+  ul {
+    flex-direction: column;
+    position: fixed;
+    top: 8vh;
+    background: #252525;
+    width: 100%;
+    height: 100%;
+    left: -1000px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  ul li a {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+ul li a:hover{
+color: white;
+
+
+}
+ul li a:hover::after{
+display: none;  
+  
+  }
+  ul.active {
+    left: 0;
+  }
+  ul li:nth-child(4) {
+display: none;
+  }
+}
+
+.not {
+  height: 5px;
+  width: 3px;
+  background-color: black;
+  position: absolute;
+}
+
+.start-btn {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f81818;
+  border: 1px solid #f81818;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.start-btn a {
+  text-decoration: none;
+}
+.start-btn:hover {
+  color: #fff !important ;
+  background-color: #f81818;
+}
+
+.button-btn i {
+  transform: rotate(90deg);
+  font-size: 25px;
+}
+.button-btn {
+  margin: 0;
+}
+.logout{
+  display: flex;
+}
+
+.logout li {
+  list-style-type: none;
+}
+.logout span{
+  display: inline-block;
+  padding: 0 1.5rem;
+  cursor: pointer;
+
+}
+
+
