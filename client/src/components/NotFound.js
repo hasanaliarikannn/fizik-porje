@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+
 const NotFound = () => {
 	return (
 		<div >
@@ -6,7 +6,7 @@ const NotFound = () => {
 			<div >
 				<h1 >404</h1>
 				<p >
-					Hata
+					Hata sayfası
 				</p>
 			</div>
 		</div>
