@@ -30,7 +30,7 @@ const Navbar = () => {
           {user.name}
         </Link>
       </li>
-      <Link to="/home">
+      <Link to="/">
         <span onClick={logout}>logout</span>
       </Link>
     </div>

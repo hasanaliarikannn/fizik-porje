@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { postLogin } from "../../store/asyncMethods/AuthMethods";
 import toast, { Toaster } from "react-hot-toast";
+import './Login.css'
+
 const Login = () => {
   const dispatch = useDispatch();
   const { loginErrors, loading } = useSelector((state) => state.AuthReducer);
@@ -26,20 +28,19 @@ const Login = () => {
   }, [loginErrors]);
   return (
     <>
-      <div >
-        <div >
-          <div >
-            <form onSubmit={userLogin}>
+      <div  >
+        <div>
+          <div  >
+            <form  onSubmit={userLogin}>
               <div >
                 <h3 >Login</h3>
               </div>
               <div >
-                <input
+                <input className="login-input"
                   type="email"
                   name="email"
                   value={state.email}
                   onChange={handleInputs}
-                  className="group__control"
                   placeholder=" Email gir"
                 />
               </div>

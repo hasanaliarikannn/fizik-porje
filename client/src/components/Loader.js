@@ -1,7 +1,7 @@
 const Loader = () => {
 	return (
 		<div>
-			<div></div>
+			<div>Hedefizik</div>
 		</div>
 	);
 };

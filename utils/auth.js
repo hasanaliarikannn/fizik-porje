@@ -1,3 +1,5 @@
+//! authorization bölümü
+
 const jwt = require('jsonwebtoken');
 module.exports = (req, res, next) => {
 	const authHeaders = req.headers.authorization;

@@ -100,10 +100,10 @@ const Create = (props) => {
 					<div className='row ml-minus-15 mr-minus-15'>
 						<div className='col-6 p-15'>
 							<div className='card'>
-								<h3 className='card__h3'>Create a new post</h3>
+								<h3 className='card__h3'>Yeni post yarat</h3>
 
 								<div className='group'>
-									<label htmlFor='title'>Post Title</label>
+									<label htmlFor='title'>Post ADI </label>
 									<input
 										type='text'
 										name='title'
@@ -114,8 +114,8 @@ const Create = (props) => {
 										placeholder='Post title...'
 									/>
 								</div>
-								<div className='group'>
-									<label htmlFor='image' className='image__label'>
+								<div>
+									<label htmlFor='image' >
 										{currentImage}
 									</label>
 									<input
@@ -125,8 +125,8 @@ const Create = (props) => {
 										onChange={fileHandle}
 									/>
 								</div>
-								<div className='group'>
-									<label htmlFor='body'>Post body</label>
+								<div >
+									<label htmlFor='body'>Post  açıklama</label>
 									<ReactQuill
 										theme='snow'
 										id='body'
@@ -135,8 +135,8 @@ const Create = (props) => {
 										onChange={setValue}
 									/>
 								</div>
-								<div className='group'>
-									<label htmlFor='description'>Meta Description</label>
+								<div >
+									<label htmlFor='description'>Açıklama</label>
 									<textarea
 										name='description'
 										id='description'
@@ -144,7 +144,7 @@ const Create = (props) => {
 										rows='10'
 										defaultValue={state.description}
 										onChange={handleDescription}
-										className='group__control'
+										
 										placeholder='meta description...'
 										maxLength='150'></textarea>
 									<p className='length'>
@@ -153,9 +153,9 @@ const Create = (props) => {
 								</div>
 							</div>
 						</div>
-						<div className='col-6 p-15'>
-							<div className='card'>
-								<div className='group'>
+						<div >
+							<div>
+								<div >
 									<label htmlFor='slug'>Post URL</label>
 									<input
 										type='text'
@@ -163,11 +163,11 @@ const Create = (props) => {
 										id='slug'
 										value={slug}
 										onChange={slugHandle}
-										className='group__control'
+										
 										placeholder='Post URL...'
 									/>
 								</div>
-								<div className='group'>
+								<div >
 									{slugButton ? (
 										<button class='btn btn-default' onClick={handleURL}>
 											Update Slug
@@ -176,13 +176,13 @@ const Create = (props) => {
 										''
 									)}
 								</div>
-								<div className='group'>
-									<div className='imagePreivew'>
+								<div >
+									<div >
 										{imagePreview ? <img src={imagePreview} /> : ''}
 									</div>
 								</div>
 
-								<div className='group'>
+								<div >
 									<input
 										type='submit'
 										value='Create post'

@@ -82,3 +82,39 @@ text-decoration: none;
     margin-top: -490px;
 
 }
+
+
+@media screen and (max-width: 750px) {
+
+.notfound-image img {
+display:none;
+}
+.notfound-text  .notfound-error {
+  margin-left: 180px;
+}
+.notfound-text  .notfound-error-2{
+  margin-left: 180px;
+  font-size: 25px;
+}
+.notfound-text  .notfound-error-3{
+  margin-left: 180px;
+font-size: 20px;
+}
+
+.notfound-button .notfount-button_1
+{
+  margin-left: 50px;
+}
+.notfound {
+
+  margin-left: -100px;
+}
+
+}
+
+
+
+
+
+
+
